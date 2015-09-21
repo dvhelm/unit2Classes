@@ -45,9 +45,10 @@ public class DoorTest
     {
     }
     @Test
-    public void testDoor()
+    public void testClose()
     {
-        Door door = new Door (
+        Door door = new Door ("Side","Closed");
+        door.close();
         
     }
 }
