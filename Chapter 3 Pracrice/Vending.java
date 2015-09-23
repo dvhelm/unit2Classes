@@ -13,13 +13,10 @@ public class Vending
     
     private int token;
 
-    /**
-     * Default constructor for objects of class Vending
-     */
-    public Vending()
+    public Vending(int can)
     {
         // initialise instance variables
-        this.can=can;
+        this.can=10;
         this.token=0;
     }
     public int getToken()
@@ -36,7 +33,7 @@ public class Vending
     {
         // put your code here
         this.token+=tokensIn;
-        can-=1;
+        can-=tokensIn;
     }
     public void addCan(int cansIn)
     {
