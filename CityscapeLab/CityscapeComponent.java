@@ -9,7 +9,7 @@ import javax.swing.JComponent;
  * @author @gcschmit
  * @version 18 July 2014
  */
-public class CityscapeComponent extends JComponent
+public class CityscapeComponent
 {
     // define the objects in your Cityscape as instance variables
     // ...
