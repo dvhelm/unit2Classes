@@ -1,6 +1,10 @@
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.geom.*;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Line2D;
+import java.awt.geom.Point2D;
+import java.awt.Color;
+
 /**
  * A car shape that can be positioned anywhere on the screen
  */
@@ -52,7 +56,7 @@ public class Car
         g2.draw(roofTop);
         g2.draw(rearWindshield);
 
-        Ellipse2D.Float circle = new Ellipse2D.Float(-30.0f, -30.0f, 100.0f, 100.0f);
+        Ellipse2D.Float circle = new Ellipse2D.Float(0.0f, 30.0f, 100.0f, 100.0f);
 
         g2.draw(circle);
         g2.setPaint(Color.yellow);
